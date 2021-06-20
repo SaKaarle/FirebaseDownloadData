@@ -1,6 +1,16 @@
 ### FirebaseDownloadData
 
-Firebase database vain readonlynä ja write databaseen auth uid
+Firebase database vain readonlynä ja write dataa pystyy vaan annetulla UID:llä databaseen (Firebasen Realtime Database)
+
+{
+  "rules": {
+    "DHT": {
+        ".read" : true,
+        ".write": "'your.uid.hereasdasdasdasdas' === auth.uid"
+    }
+  }
+}
+
 
 ### imports
 `import pyrebase`
