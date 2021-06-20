@@ -2,7 +2,7 @@ import pyrebase
 from pprint import pprint
 
 config = {
-  "apiKey": "m2YYSDBUFvfB3AU7Px2mMoHtTUwRDOZhce6hgC38",
+  "apiKey": "apiavain",
   "authDomain": "temperatureproject-666.firebaseio.com",
   "databaseURL": "https://temperatureproject-666.firebaseio.com/",
   "projectID": "temperatureproject-666",
