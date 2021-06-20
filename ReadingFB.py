@@ -63,9 +63,9 @@ Datan siirto Firebaseen ON TEORIASSA suojattu
 class readndisplay:
 
   def tappavamethodi(self):
-      DateYearDay = db.child("DHT").get()
-
-      for paiva in DateYearDay.each():
+      self.DateYearDay = db.child("DHT").get()
+      
+      for paiva in self.DateYearDay.each():
           self.datetimes = paiva.val()
           self.dateTimesYear = paiva.key()
           self.vuosijapvm = []
@@ -102,7 +102,7 @@ class readndisplay:
       clicked2.set(self.listaus[0])
       # drop = OptionMenu(root, clicked, self.datetimes, self.temp, self.humid)
       
-      drop1 = OptionMenu(root, clicked1, *self.vuosijapvm).pack(expand=True)
+      drop1 = OptionMenu(root, clicked1, *self.DateYearDay.val()).pack(expand=True)
       drop2 = OptionMenu(root, clicked2, *self.listaus).pack(expand=True)
       #drop2 = OptionMenu(root, clicked2, *[itemListaus[::] for itemListaus in self.listaus]).pack()
 
