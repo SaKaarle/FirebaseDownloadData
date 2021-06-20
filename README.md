@@ -19,15 +19,15 @@ Firebase database vain readonlynä ja write dataa pystyy vaan annetulla UID:llä
 
 
 ### imports
-`import pyrebase`
+```import pyrebase
   
-`from pprint import pprint`
+from pprint import pprint
   
-`import json`
+import json
   
-`from tkinter import *`
+from tkinter import *
   
-`import firebase_admin`
+import firebase_admin
   
-`from firebase_admin import credentials`
+from firebase_admin import credentials```
   
