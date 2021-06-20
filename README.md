@@ -32,3 +32,8 @@ import firebase_admin
 from firebase_admin import credentials
 ```
   
+### Tärkeää
+  
+Pyrebase ei välttämättä toimi halutulla tavalla, joten suositeltavaa asentamaan `pip install pyrebase4` terminaalin avulla
+  
+koodi on keskeneräinen, vaatii korjausta UI:n kanssa
