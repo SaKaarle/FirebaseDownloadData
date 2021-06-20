@@ -8,5 +8,5 @@ Firebase database vain readonlynä ja write databaseen auth uid
 `import json`
 
 `from tkinter import *
-`import firebase_admin
+`import firebase_admin`
 `from firebase_admin import credentials`
