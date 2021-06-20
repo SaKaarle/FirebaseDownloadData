@@ -12,8 +12,8 @@ Firebase database vain readonlynä ja write dataa pystyy vaan annetulla UID:llä
   ".write": "'your.uid.hereasdasdasdasdas' === auth.uid"
   }
  }
-}```
-  
+}
+```  
   
 
 
