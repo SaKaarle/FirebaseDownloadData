@@ -91,7 +91,7 @@ class readndisplay:
 
 # Tästä eteenpäin mars
 
-  def GUIpaska(self):
+  def GUIdisplay(self):
       root = Tk()
       root.title("Python GUI testi")
       root.geometry("400x200")
@@ -113,4 +113,4 @@ if __name__ == "__main__":
 
   starttaus = readndisplay()
   starttaus.tappavamethodi()
-  starttaus.GUIpaska()
+  starttaus.GUIdisplay()
