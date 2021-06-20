@@ -5,7 +5,14 @@ Firebase database vain readonlynä ja write dataa pystyy vaan annetulla UID:llä
   
 
   
-`{ "rules": {"DHT": {".read" : true,".write": "'your.uid.hereasdasdasdasdas' === auth.uid"}}}`
+```{ 
+"rules": {
+  "DHT": {
+  ".read" : true,
+  ".write": "'your.uid.hereasdasdasdasdas' === auth.uid"
+  }
+ }
+}```
   
   
 
