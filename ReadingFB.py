@@ -131,6 +131,7 @@ class readndisplay:
       #drop2 = OptionMenu(root, clicked2, *[itemListaus[::] for itemListaus in self.listaus]).pack()
       
       self.root.mainloop()
+      
 if __name__ == "__main__":
 
     starttaus = readndisplay()
