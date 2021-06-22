@@ -64,22 +64,22 @@ class readndisplay:
         self.DateYearDay = db.child("DHT").get()
 
         for paiva in self.DateYearDay.each():
-            self.datetimes = paiva.val()
+            self.dateTimes = paiva.val()
             self.dateTimesYear = paiva.key()
             self.vuosijapvm = []
             self.listaus = []
             #pprint(paiva.key())
-            for self.klo in self.datetimes:
+            for self.klo in self.dateTimes:
 
-                self.temp = self.datetimes[self.klo]["Temp"]
-                self.humid = self.datetimes[self.klo]["Humid"]
+                self.temp = self.dateTimes[self.klo]["Temp"]
+                self.humid = self.dateTimes[self.klo]["Humid"]
                 self.lampotilakatsaus = "{0} | {1} | {2}°C | {3}%"
                 self.textPrint = (self.lampotilakatsaus.format(self.dateTimesYear, self.klo, self.temp, self.humid))
                 self._poghamp = [self.dateTimesYear,self.klo, self.temp, self.humid]
                 '''postaa ekana pvm, aika, temp ja humid '''
 
                 self._year = [self.dateTimesYear]
-                # rivi = dict(aikataulu=self.datetimes,temperature=self.temp,kosteus=self.humid)
+                # rivi = dict(aikataulu=self.dateTimes,temperature=self.temp,kosteus=self.humid)
                 # self.rivi = self._poghamp
                 self.listaus.append(self.textPrint)
                 self.vuosijapvm.append(self._year)
@@ -88,7 +88,7 @@ class readndisplay:
             #for self.infot in self.listaus:
                 #pprint(self.infot)
                 #print(self.poghamp)
-                #print(self.datetimes,self.temp,self.humid)
+                #print(self.dateTimes,self.temp,self.humid)
             ''' For lause printtaa vuodet'''  
             # for self.infotYear in self._year:
                 # pprint([self.infotYear])
@@ -123,7 +123,7 @@ class readndisplay:
       clicked1.set(self.vuosijapvm[0])
       clicked2.set(self.listaus[-1])      
 
-      # drop = OptionMenu(root, clicked, self.datetimes, self.temp, self.humid)
+      # drop = OptionMenu(root, clicked, self.dateTimes, self.temp, self.humid)
 
       dateBtn = Button(self.root,text="Syötä tiedot.",command=miuPainaus).grid(row=2,column=1)
       drop1 = OptionMenu(self.root, clicked1, *self.DateYearDay.val()).grid(row=0,column=0)
