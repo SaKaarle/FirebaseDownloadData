@@ -12,7 +12,7 @@ from firebase_admin import credentials
 # pip install pyrebase4
 
 config = {
-    "apiKey": "AIzaSyC0gWWH779wuS1c8NuDHPF4TgwfcmlX5WQ",
+    "apiKey": "apiavain",
     "authDomain": "temperatureproject-666.firebaseio.com",
     "databaseURL": "https://temperatureproject-666.firebaseio.com/",
     "projectID": "temperatureproject-666",
